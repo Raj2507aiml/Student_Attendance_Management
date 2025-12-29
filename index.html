@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Attendance Management</h1>
+    <div class="section">
+      <h2>Add Student</h2>
+      <input type="text" id="student-name" placeholder="Name">
+      <input type="text" id="student-roll" placeholder="Roll Number">
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+    <div class="section">
+      <h2>Mark Attendance</h2>
+      <select id="student-select"></select>
+      <select id="status-select">
+        <option value="present">Present</option>
+        <option value="absent">Absent</option>
+      </select>
+      <button onclick="markAttendance()">Submit Attendance</button>
+    </div>
+    <div class="section">
+      <h2>Students List</h2>
+      <ul id="students-list"></ul>
+    </div>
+    <div class="section">
+      <h2>Attendance History</h2>
+      <table id="attendance-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
